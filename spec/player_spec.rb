@@ -1,6 +1,5 @@
 require 'player'
 
-<<<<<<< HEAD
 describe 'Player' do 
   subject(:ash) { Player.new("Ash") }
   subject(:brock) { Player.new("Brock") }
