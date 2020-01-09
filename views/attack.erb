@@ -5,7 +5,9 @@
 
 <body>
 
-<%= $player_1.name %> has attacked <%= $player_2.name %>!
+<%= @player_1.name %> has attacked <%= @player_2.name %>!
+
+<%= @player_2.name %>'s HP now <%= @player_2.hit_points %>
 
 
   <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="media/battle_tune.mp3" autoplay=true>

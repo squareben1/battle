@@ -16,12 +16,12 @@ describe 'Player' do
     end 
   end  
 
-  describe '#attack' do 
-    it 'damages player' do 
-      expect(brock).to receive(:receive_damage)
-      ash.attack(brock)
-    end 
-  end 
+  # describe '#attack' do 
+  #   it 'damages player' do 
+  #     expect(brock).to receive(:receive_damage)
+  #     ash.attack(brock)
+  #   end 
+  # end 
 
   describe '#receive_damage' do 
     it 'reduces the player HP' do 
