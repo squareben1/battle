@@ -18,10 +18,8 @@ end
 get '/play' do 
   @player_1_name = $player_1.name
   @player_2_name = $player_2.name
-  # session[:player_1_hp] = 100
-  # session[:player_2_hp] = 100
-  @player_1_hp = 100 #session[:player_1_hp]
-  @player_2_hp = 100 #session[:player_2_hp]
+  @player_1_hp = $player_1.hit_points
+  @player_2_hp = $player_2.hit_points
   erb :play
 end 
 
