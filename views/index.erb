@@ -1,0 +1,34 @@
+
+<html>
+<head> 
+  <link type='text/css' rel='stylesheet' href='/css/styles.css'>
+
+</head>
+
+
+<body>
+
+<h1>Battle!</h1>
+<h2>Sign in to play</h2>
+
+<audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="media/battle_tune.mp3" autoplay=true>
+</audio>
+<script src="media/audio.js"></script>
+
+<form action="/names" method="post">
+  <label for="player_1_name">
+    Player 1 Name: 
+    <input type="text" name="player_1_name"> 
+  </label>
+  <label for="player_2_name">
+    Player 2 Name: 
+    <input type="text" name="player_2_name"> 
+  </label>
+  <input type="submit" value="Submit">
+
+  
+</form>
+</font>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link type='text/css' rel='stylesheet' href='/css/styles.css'>
+</head>
+
+<body>
+
+  <%= @player_1_name %> vs. <%= @player_2_name %> <br>
+  <%= @player_1_name %> HP = <%= @player_1_hp %> <br> - <%= @player_2_name %> HP = <%= @player_2_hp %> <br>
+
+  <a href="/attack">Attack</a>
+
+  <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="media/battle_tune.mp3" autoplay=true>
+    </audio>
+    <script src="media/audio.js"></script>
+
+</body>
+</html>
