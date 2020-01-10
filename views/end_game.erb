@@ -1,0 +1,17 @@
+<html>
+<head>
+  <link type='text/css' rel='stylesheet' href='/css/styles.css'>
+</head>
+
+<body>
+
+<%= @game.opponent_of(@game.current_turn).name %> dies!
+<br>
+<%= @game.current_turn.name %> WINS! <br> 
+
+  <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="media/battle_tune.mp3" autoplay=true>
+    </audio>
+    <script src="media/audio.js"></script>
+
+</body>
+</html>
