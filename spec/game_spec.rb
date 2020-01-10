@@ -26,5 +26,18 @@ require 'game'
     it 'retrieves P2' do 
       expect(game.player_2).to eq player_2
     end   
-  end 
+    end
+    
+    describe '#current_turn' do 
+      it 'starts as P1' do 
+        expect(game.current_turn).to eq player_1
+      end 
+    end 
+
+    describe '#switch_turns' do 
+      it 'switches the turn' do 
+        game.switch_turns
+        expect(game.current_turn).to eq player_2
+      end 
+    end 
   end 

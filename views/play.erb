@@ -5,10 +5,15 @@
 
 <body>
 
-  <%= @player_1_name %> vs. <%= @player_2_name %> <br>
-  <%= @player_1_name %> HP = <%= @player_1_hp %> - <%= @player_2_name %> HP = <%= @player_2_hp %> <br>
+  <%= @game.player_1.name %> vs. <%= @game.player_2.name %> <br>
+  <%= @game.player_1.name %> HP = <%= @game.player_1.hit_points %> - <%= @game.player_2.name %> HP = <%= @game.player_2.hit_points %> <br>
   <br>
-  <a href="/attack">Attack</a>
+
+  <%= @game.current_turn.name %>'s turn <br>
+  <br>
+  
+   <a href="/attack">Attack</a>
+   <!-- add silent form in here, pre-filled w/ key vals of HP  -->
 
   <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="media/battle_tune.mp3" autoplay=true>
     </audio>

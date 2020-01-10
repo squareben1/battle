@@ -5,10 +5,19 @@
 
 <body>
 
-<%= @player_1.name %> has attacked <%= @player_2.name %>!
+<%= @game.player_1.name %> vs. <%= @game.player_2.name %> <br>
+  <%= @game.player_1.name %> HP = <%= @game.player_1.hit_points %> - <%= @game.player_2.name %> HP = <%= @game.player_2.hit_points %> <br>
+  <br>
+   
+<%= @game.player_1.name %> has attacked <%= @game.player_2.name %>!
 
-<%= @player_2.name %>'s HP now <%= @player_2.hit_points %>
-
+<%= @game.player_2.name %>'s HP now <%= @game.player_2.hit_points %>
+<br>
+<br>
+<%= @game.current_turn.name %>'s turn 
+<br>
+<br>
+<a href="/attack">Attack</a>
 
   <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="media/battle_tune.mp3" autoplay=true>
     </audio>
